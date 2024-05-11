@@ -77,6 +77,20 @@
  };
  let decrement = (id)=>{
    let selectedItem = id; 
-   console.log(selectedItem.id);
+   let search = basket.find((x)=> x.id === selectedItem.id);
+
+   if(search === undefined){
+      basket.push({
+      id: selectedItem.id,
+      item: 1,
+   });
+   }
+
+   else{
+      search.item -=1;
+   }
+
+   
+   console.log(basket);
  };
  let update = ()=>{};

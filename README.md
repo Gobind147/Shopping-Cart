@@ -1,4 +1,4 @@
-# Project Name
+# Shopping Cart
 
 **Secure Payment Integration:** Implemented a secure payment gateway to ensure data encryption and privacy for user transactions, enhancing trust and security in the online shopping experience.
 

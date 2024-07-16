@@ -1,10 +1,10 @@
 # Shopping Cart
 
-**Secure Payment Integration:** Implemented a secure payment gateway to ensure data encryption and privacy for user transactions, enhancing trust and security in the online shopping experience.
+**Implemented Dynamic Shopping Cart Functionality:** Developed a dynamic shopping cart using JavaScript, which included features for adding, updating, and removing items. Integrated a local storage mechanism to persist cart data across sessions, ensuring a seamless user experience.
+
+**Intuitive User Interface:** Designed a user-friendly interface using HTML & CSS, prioritizing usability and aesthetic appeal to facilitate easy navigation and create an engaging shopping environment.
 
 **Optimized Performance:** Improved application performance with efficient state management techniques, reducing load times and enhancing responsiveness for a smooth and fast shopping experience.
-
-**Intuitive User Interface:** Designed a user-friendly interface using HTML, CSS, and Bootstrap Icons, prioritizing usability and aesthetic appeal to facilitate easy navigation and create an engaging shopping environment.
 
 **Real-Time Cart Updates:** Developed features for real-time cart updates that instantly reflect changes in item quantities and total costs, providing users with immediate feedback and ensuring a seamless shopping experience.
 

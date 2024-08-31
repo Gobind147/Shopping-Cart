@@ -13,20 +13,33 @@
             <h2>Clothing Store</h2>
         </a>
 
-        <a href="cart.html">
-            <div class="cart">
-                <i class="bi bi-cart2"></i>
-                <div id="cartAmount" class="cartAmount">0</div>
+        <div class="nav-right">
+            <div class="search-container">
+                <i class="bi bi-search search-icon" id="searchToggle"></i>
+                <input type="text" id="searchInput" placeholder="Search..." class="search-input">
             </div>
-        </a>
-        
-        
+
+            <a href="cart.html">
+                <div class="cart">
+                    <i class="bi bi-cart2"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="shop" id="shop">
-        
-        
-        
+        <!-- Shop Items will be dynamically generated here -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalDetails">
+          <!-- Modal content will be dynamically generated here -->
+        </div>
+      </div>
     </div>
     
 </body>

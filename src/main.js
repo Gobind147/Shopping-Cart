@@ -20,7 +20,7 @@ let generateShop = () => {
       let search = basket.find((y) => y.id === id) || [];
       return `
     <div id=product-id-${id} class="item">
-      <img width="220" src=${img} alt="">
+      <img width="220" src=${img} alt="" onclick="openModal('${id}')">
       <div class="details">
         <h3>${name}</h3>
         <p>${desc}</p>
@@ -105,3 +105,68 @@ let calculation = () => {
 };
 
 calculation();
+
+// Modal logic
+let openModal = (id) => {
+  let modal = document.getElementById("productModal");
+  let modalContent = document.getElementById("modalDetails");
+
+  let product = shopItemsData.find((x) => x.id === id);
+  if (product) {
+    modalContent.innerHTML = `
+      <h2>${product.name}</h2>
+      <img src="${product.img}" alt="${product.name}" width="300"/>
+      <p>${product.desc}</p>
+      <p><strong>Price:</strong> $${product.price}</p>
+      <button onclick="increment(${id})" class="btn-add">Add to Cart</button>
+    `;
+  }
+
+  modal.style.display = "block";
+};
+
+let closeModal = () => {
+  let modal = document.getElementById("productModal");
+  modal.style.display = "none";
+};
+
+let span = document.getElementsByClassName("close")[0];
+span.onclick = closeModal;
+
+window.onclick = function(event) {
+  let modal = document.getElementById("productModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Toggle search input visibility
+let searchToggle = document.getElementById("searchToggle");
+let searchInput = document.getElementById("searchInput");
+
+searchToggle.addEventListener("click", function() {
+    if (searchInput.style.width === "0px" || searchInput.style.width === "") {
+        searchInput.style.width = "150px";
+        searchInput.style.opacity = "1";
+        searchInput.focus();
+    } else {
+        searchInput.style.width = "0px";
+        searchInput.style.opacity = "0";
+        searchInput.blur();
+    }
+});
+
+// Search functionality
+searchInput.addEventListener("keyup", function() {
+  let filter = searchInput.value.toLowerCase();
+  let items = document.getElementsByClassName("item");
+  
+  Array.from(items).forEach(function(item) {
+    let itemName = item.getElementsByTagName("h3")[0].textContent;
+    if (itemName.toLowerCase().indexOf(filter) > -1) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});

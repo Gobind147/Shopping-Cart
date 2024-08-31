@@ -80,6 +80,9 @@ cd Shopping-Cart
 
 ## <a name="screenshots">🤸 Screenshots</a>
 
-![image](https://github.com/Gobind147/Shopping-Cart/assets/93241765/5cf53af2-f683-4692-af49-c8e131179938)
+![screenshot1](https://github.com/user-attachments/assets/1a24e61c-a6d9-4dc0-b6ce-8a68e550df73)
 
-![image](https://github.com/Gobind147/Shopping-Cart/assets/93241765/9aece9af-7845-4616-9174-3af58f139538)
+
+![screenshot2](https://github.com/user-attachments/assets/e7d1dd51-3ae7-42cf-bf74-709f71340c4d)
+
+
